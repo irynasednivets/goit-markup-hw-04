@@ -253,6 +253,17 @@ body {
     overflow: hidden;
 }
 
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--cloud);
+    margin-bottom: 8px;
+}
+
 .main_info_li {
     display: flex;
     gap: 24px;
@@ -320,7 +331,9 @@ body {
     background-color: var(--basic-white);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-    0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .main_team_li {
@@ -461,7 +474,7 @@ body {
 }
 
 
-.backdrop{
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -469,8 +482,9 @@ body {
     height: 100%;
     background: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal-window{
+}
+
+.modal-window {
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
@@ -481,11 +495,12 @@ body {
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal-close-btn{
+}
+
+.modal-close-btn {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -497,19 +512,21 @@ body {
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       
- }
-.modal-close-btn:is(:hover,:focus){
-    background-color:#404bbf;
+
+}
+
+.modal-close-btn:is(:hover, :focus) {
+    background-color: #404bbf;
     border: none;
     fill: #ffffff;
 }
- .close-icon{
+
+.close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .close-icon:is(:hover, :focus){
-    
- }
+}
+
+.close-icon:is(:hover, :focus) {}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
