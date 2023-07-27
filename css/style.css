@@ -636,8 +636,7 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.porfolio_img:hover .text_portfolio-overflow,
-.portfolio_img:focus .text_portfolio-overflow {
+.porfolio_img:is(:hover, :focus) .text_portfolio-overflow {
     transform: translateY(0%);
 }
 
