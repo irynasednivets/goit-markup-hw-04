@@ -593,7 +593,8 @@ body {
 
 }
 
-.modal_close_btn:is(:hover, :focus) {
+.modal_close_btn:hover,
+.modal_close_btn:focus {
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
@@ -602,11 +603,7 @@ body {
 .close_icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close_icon:is(:hover, :focus) {
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff;
-}
+
 
 .is-hidden {
     opacity: 0;
