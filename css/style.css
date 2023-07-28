@@ -115,7 +115,10 @@ body {
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.header_menu_item{
+    position: relative;
+    color: #404bbf;
+}
 .header_menu_li:hover {
     color: #404bbf;
 }
@@ -127,12 +130,9 @@ body {
 .header_menu_li:active {
     text-decoration: underline;
 }
-.header_menu_li.current:active {
-    position: relative;
-    color: #404bbf;
-}
 
-.current::after {
+
+.current:active::after {
     content: "";
     position: absolute;
     width: 100%;
