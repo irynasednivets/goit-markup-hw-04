@@ -69,10 +69,11 @@ body {
     justify-content: space-between;
 }
 
-.header_menu_li.current {
+.header_menu_li .current {
     position: relative;
     color: #404bbf;
 }
+
 
 .current::after {
     content: '';
@@ -123,17 +124,18 @@ body {
 }
 
 .header_menu_li {
-    color: #2e2f42;
     display: block;
     padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header_menu_item{
-    color:#2e2f42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_menu_item {
+    color: #2e2f42;
 }
 
 .header_menu_li:hover,
